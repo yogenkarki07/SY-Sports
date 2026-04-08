@@ -1,0 +1,115 @@
+/* GLOBAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* SECTION WRAPPER */
+
+.about-us {
+    padding: 100px 0;
+    background: linear-gradient(to right, #000000, #0A3D3F);
+    color: #fff;
+} 
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* FLEX LAYOUT */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+/* HEADINGS */
+.about-us h2 {
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.about-us h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0FD4C4; /* bright teal highlight */
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* PARAGRAPH */
+.about-us p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #e6e6e6;
+    margin-bottom: 25px;
+}
+
+/* IMAGE */
+.about-us img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: brightness(0.85) contrast(1.2) drop-shadow(10px 10px 25px rgba(0,0,0,0.7));
+}
+
+/* SOCIAL ICONS */
+.social-links {
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 12px;
+    color: #fff;
+    background-color: #0A3D3F;
+    border: 2px solid #0FD4C4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-4px) scale(1.05);
+    background-color: #0FD4C4;
+    color: #000;
+}
+
+/* BUTTON */
+.btn {
+    text-decoration: none;
+    color: #000;
+    background-color: #0FD4C4;
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background-color: #13f0dd;
+}

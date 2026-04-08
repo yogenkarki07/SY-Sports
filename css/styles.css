@@ -1,0 +1,332 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Whole body*/
+body{
+    font-family: monospace, "Roboto", sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+
+    height: 60px;
+    cursor: pointer;
+
+    background-color: whitesmoke;
+
+   /* position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;*/
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(10, 10, 86);
+}
+
+.header a:hover {
+    transform: translateY(-4px) scale(1.05);
+    transition: transform 0.3s;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Search Bar of the header */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1px 1px;
+    border: 2px solid rgb(10, 10, 86);
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    background-color: transparent;
+    color: rgb(10, 10, 86);
+}
+
+.search input::placeholder {
+    color: rgb(100, 100, 150);
+}
+
+.search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+
+    img{
+        max-height: 15px;
+    }
+}
+
+.header .cart{
+    margin-left: auto;
+    border: none;
+
+    img{
+        max-height: 25px;
+    }
+}
+
+
+.header .logo{
+    margin-right: auto;
+    max-height: 60px;
+}
+
+/* container-box */
+.container{
+    
+    max-height: 1200;
+    margin: 0;
+    padding: 0px;
+}
+
+/*background-image*/
+.background{
+    background-image: url("../img/bg.png");
+    min-height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* position of p, h1 and shop */
+.content {
+    position: absolute;
+
+    top: 40%;
+    left: 30%;
+
+    transform: translate(-50%, -50%);
+    color: teal;
+}
+
+.content span{
+    font-family: "Bebas Neue", sans-serif, monospace;
+   /* color: rgb(11, 119, 119); */
+    filter:brightness(1.5);
+    font-size: 70px;
+    font-weight: bold;
+    max-width: 50%;
+}
+.content p{
+   /*  color: rgb(11, 119, 119); */
+}
+.btn2{
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+}
+.shop{
+     background-color: teal;
+     border: 1px solid teal;
+     border-radius: 5px;
+
+     height: 30px;
+     width: auto;
+}
+
+
+.shop:hover{
+    transform: translateY(-4px) scale(1.05);
+    background-color: teal;
+    transition: transform 0.3s;
+}
+
+.shop a {
+     text-decoration: none;
+     font-size: 20px;
+     color: white;
+}
+
+/* Sub-headings*/
+.sub-head{
+    color: teal;
+    margin: 30px;
+}
+
+/* flex for collection */
+
+.collection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    background-color: whitesmoke;
+}
+.collection .box{
+    height: 290px;
+    width: 250px;
+    font-size: 20px;
+    color: teal;
+    text-align: center;
+    border: solid 1px teal;
+
+    img{
+        margin-top: 10px;
+    }
+
+    img:hover{
+        transform: translateY(-4px) scale(1.05);
+        transition: transform 0.3s;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px;
+    }
+}
+
+/* Flex for best selling products*/
+
+.bestselling {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    background-color: whitesmoke;
+}
+
+.bestselling .box1{
+  /*  border: solid, white, 7px; */
+    height: 420px;
+    width: 320px;
+    text-align: center;
+    border: solid 1px teal;
+}
+
+   .bestselling img{
+    margin: 20px;
+   }
+   
+   .bestselling img:hover{
+    transform: translateY(-4px) scale(1.05);
+    transition: transform 0.3s;
+   }
+
+   .bestselling h4{
+        color: #0a0a56;
+        text-align: left;
+        margin-left: 15px;
+    }
+    .bestselling h2{
+        color: #008080;
+        text-align: left;
+        margin-left: 15px;
+    }
+    .bestselling p{
+        color: lightslategray;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    /* flex for mini-box (cart and $)*/
+    .mini-flex{
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 30px;
+        margin: 10px;
+    }
+    .mini h1{
+    color: teal;
+    }
+
+    .mini .btn{
+        display: inline-flex;
+        align-items: center;
+
+        width: auto;
+        height: 40px;
+
+        border: teal 2px solid;
+        border-radius: 5px;
+
+        background-color: teal;
+        cursor: pointer;
+    }
+
+    .mini .btn:hover{
+        transform: translateY(-4px) scale(1.05);
+        background-color: teal;
+    }
+
+    .mini .btn img{
+        height: 20px;
+        width: 20px;
+        display: block;
+        margin: 5px;
+    }
+    .mini .btn span{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-right: 5px;
+    }
+
+   /* footer section*/
+   .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+    height: 60px;
+
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: #778899;
+
+   /* position: fixed;
+    left: 0;
+    bottom: 0;
+    }*/
+
+   }
+    
+    .footer img{
+        height: 50px;
+        width: 50px;
+        margin-right: 200px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: #0a0a56;
+        font-size: 18px;
+        text-align: center;
+    }
+    .footer a:hover{
+        color: white;
+        background-color: teal;
+        transform: translateY(-4px) scale(1.05);
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .footer p{
+        color:#0a0a56;
+        font-size: 12px;
+        margin-left: 200px;
+    }
