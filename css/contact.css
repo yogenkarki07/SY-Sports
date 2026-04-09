@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #0b0f10; /* Deep black/dark gray */
+   /* background-color: #0b0f10;  Deep black/dark gray */
+   background: linear-gradient(to right, #000000, #0A3D3F);
 }
 
 .contact {
