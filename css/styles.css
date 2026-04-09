@@ -24,10 +24,11 @@ body{
 
     background-color: whitesmoke;
 
-   /* position: fixed;
+    position: fixed;
     left: 0;
     top: 0;
-    width: 100%;*/
+    width: 100%;
+    z-index: 20;
 }
 
 .header a {
@@ -115,11 +116,12 @@ body{
 .content {
     position: absolute;
 
-    top: 40%;
+    top: 35%;
     left: 30%;
 
     transform: translate(-50%, -50%);
     color: teal;
+    z-index: 10;
 }
 
 .content span{
@@ -130,9 +132,11 @@ body{
     font-weight: bold;
     max-width: 50%;
 }
-.content p{
-   /*  color: rgb(11, 119, 119); */
-}
+
+/* .content p{
+    color: rgb(11, 119, 119); 
+} */
+
 .btn2{
     display: flex;
     justify-content: left;
@@ -303,6 +307,7 @@ body{
    /* position: fixed;
     left: 0;
     bottom: 0;
+    width: 100%;
     }*/
 
    }
