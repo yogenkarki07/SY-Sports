@@ -106,7 +106,7 @@ body{
 /*background-image*/
 .background{
     background-image: url("../img/bg.png");
-    min-height: 1000px;
+    min-height: 1200px;
     background-size: cover;
     background-repeat: no-repeat;
 }
