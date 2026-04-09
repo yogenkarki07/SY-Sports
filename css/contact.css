@@ -10,6 +10,91 @@ body {
    background: linear-gradient(to right, #000000, #0A3D3F);
 }
 
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+
+    height: 60px;
+    cursor: pointer;
+
+    background-color: whitesmoke;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(10, 10, 86);
+}
+
+.header a:hover {
+    transform: translateY(-4px) scale(1.05);
+    transition: transform 0.3s;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Search Bar of the header */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1px 1px;
+    border: 2px solid rgb(10, 10, 86);
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    background-color: transparent;
+    color: rgb(10, 10, 86);
+}
+
+.search input::placeholder {
+    color: rgb(100, 100, 150);
+}
+
+.search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+
+    img{
+        max-height: 15px;
+    }
+}
+
+.header .cart{
+    margin-left: auto;
+    border: none;
+
+    img{
+        max-height: 25px;
+    }
+}
+
+
+.header .logo{
+    margin-right: auto;
+    max-height: 60px;
+}
+
+
 .contact {
     min-height: 100vh;
     padding: 80px 20px;
@@ -97,7 +182,7 @@ input:focus, textarea:focus {
     box-shadow: 0 0 10px rgba(0, 128, 128, 0.3);
 }
 
-button {
+ .msg{
     width: 100%; /* Full width looks better for mobile/fitness call to actions */
     padding: 15px;
     border: none;
@@ -111,7 +196,53 @@ button {
     transition: transform 0.2s, background-color 0.3s;
 }
 
-button:hover {
+ .msg:hover {
     background-color: #006666;
     transform: translateY(-2px);
 }
+
+
+   /* footer section*/
+   .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+    height: 60px;
+
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: whitesmoke;
+
+   /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    }*/
+
+   }
+    
+    .footer img{
+        height: 50px;
+        width: 50px;
+        margin-right: 200px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: #0a0a56;
+        font-size: 18px;
+        text-align: center;
+    }
+    .footer a:hover{
+        color: white;
+        background-color: teal;
+        transform: translateY(-4px) scale(1.05);
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .footer p{
+        color:#0a0a56;
+        font-size: 12px;
+        margin-left: 200px;
+    }
