@@ -6,9 +6,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background: url("../img/Copilot_20260402_110617.png") no-repeat center center;
     background-size: cover;
@@ -16,6 +13,16 @@ body {
 }
 
 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 420px;
     background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
     color: #fff;
@@ -113,3 +120,29 @@ body {
     text-decoration: underline;
 }
 
+.back-btn{
+    width: 60px;
+    height: 20px;
+    background: #00ffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    cursor: pointer;
+
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-50%, -50%); 
+}
+
+.back-btn a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #00cccc;
+}
