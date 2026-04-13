@@ -1,22 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./">
 </head>
+
 <body>
+
+    <script src="script.js"> </script>
+
     <section class="header">
 
         <img src="./img/logo.png" class="logo">
-        
+
         <a href="./index.html"> HOME </a>
         <a href="./index.html#bestselling"> PRODUCT </a>
         <a href="./about.html"> ABOUT </a>
@@ -24,83 +30,102 @@
 
         <div class="search">
             <input type="text" placeholder="  Search  ">
-                <button type="submit">
-                    <img src="./img/search.png" alt="Search">
-                </button>
+            <button type="submit">
+                <img src="./img/search.png" alt="Search">
+            </button>
         </div>
 
-        <button class="cart">
-            <img src="./img/cart.png"> 
+        <button class="cart-wrapper" onclick="toggleCart()">
+            <img src="./img/cart.png" alt="cart " class="cart">
         </button>
-    </section>
 
-   <section class="container">
-      <div class="background">
-        <div class="content">
-                <span>
-                IF YOU WANT TO BE THE BEST<br>
-                BEAT THE REST
-                </span>
-             <p>
-                Available high-performance gears for the modern athlete. <br>
-                Precision-engineered apparel and equipment for every discipline. <br><br>
-            </p>
-            <div class="btn2">
-            <button class="shop">
-                <a href="#bestselling">SHOP NOW</a>
-            </button>
+        <div id="cartModal" class="cart-modal">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <h3>CART</h3>
+                    <span class="close-btn" onclick="toggleCart()">&times;</span>
+                </div>
+                <div class="cart-items">
+                    <div class="item">
+                        <span> Cart is empty </span>
+                    </div>
+                </div>
 
-            <button class="shop">
-                <a href="./sign-in.html">SIGN IN</a>
-            </button>
+                <div class="cart-footer">
+                    <button class="buy-btn">BUY</button>
+                </div>
             </div>
         </div>
-      </div>
-   </section>
 
-     <div class="sub-head">
+    </section>
+
+    <section class="container">
+        <div class="background">
+            <div class="content">
+                <span>
+                    IF YOU WANT TO BE THE BEST<br>
+                    BEAT THE REST
+                </span>
+                <p>
+                    Available high-performance gears for the modern athlete. <br>
+                    Precision-engineered apparel and equipment for every discipline. <br><br>
+                </p>
+                <div class="btn2">
+                    <button class="shop">
+                        <a href="#bestselling">SHOP NOW</a>
+                    </button>
+
+                    <button class="shop">
+                        <a href="./sign-in.html">SIGN IN</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sub-head">
         <h2>
             COLLECTIONS
         </h2>
-     </div>
+    </div>
 
-   <section class="collection">
-     <div class="box">
-        <img src="./img/creatine.jpg">
-        <p>Protein</p>
-     </div>
+    <section class="collection">
+        <div class="box">
+            <img src="./img/creatine.jpg">
+            <p>Protein</p>
+        </div>
 
-    <div class="box">
-        <img src="./img/bag.jpg">
-        <p>Bag</p>
-     </div>
+        <div class="box">
+            <img src="./img/bag.jpg">
+            <p>Bag</p>
+        </div>
 
-      <div class="box">
-        <img src="./img/silajit.jpg">
-        <p>Silajit</p>
-     </div>
+        <div class="box">
+            <img src="./img/silajit.jpg">
+            <p>Silajit</p>
+        </div>
 
-     <div class="box">
-        <img src="./img/shoe.png">
-        <p>Sport Shoe</p>
-     </div>
+        <div class="box">
+            <img src="./img/shoe.png">
+            <p>Sport Shoe</p>
+        </div>
 
-      <div class="box">
-        <img src="./img/football.jpg">
-        <p>Football</p>
-     </div>
-   </section>
+        <div class="box">
+            <img src="./img/football.jpg">
+            <p>Football</p>
+        </div>
+    </section>
 
-     <div class="sub-head">
+    <div class="sub-head">
         <h2>
             Best Selling Products
         </h2>
         <p>
             The most popular gears among the athletes.
         </p>
-     </div>
-     
-     <section id="bestselling" class="bestselling">
+    </div>
+
+    <section id="bestselling" class="bestselling">
         <div class="box1">
             <img src="./img/fshoe.jpg">
             <h4>PERFORMANCE</h4>
@@ -109,16 +134,16 @@
 
             <div class="mini-flex">
 
-            <div class="mini">
-            <h1>$549.99</h1>
-            </div>
+                <div class="mini">
+                    <h1>$549.99</h1>
+                </div>
 
-            <div class="mini">
-            <button class="btn"> 
-                <img src="./img/cart.png"> 
-                <span>Add to Cart</span>
-            </button>
-            </div>
+                <div class="mini">
+                    <button class="btn">
+                        <img src="./img/cart.png">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
 
             </div>
         </div>
@@ -131,16 +156,16 @@
 
             <div class="mini-flex">
 
-            <div class="mini">
-            <h1>$199.99</h1>
-            </div>
+                <div class="mini">
+                    <h1>$199.99</h1>
+                </div>
 
-            <div class="mini">
-            <button class="btn"> 
-                <img src="./img/cart.png"> 
-                <span>Add to Cart</span>
-            </button>
-            </div>
+                <div class="mini">
+                    <button class="btn">
+                        <img src="./img/cart.png">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
 
             </div>
         </div>
@@ -153,16 +178,16 @@
 
             <div class="mini-flex">
 
-            <div class="mini">
-            <h1>$119.99</h1>
-            </div>
+                <div class="mini">
+                    <h1>$119.99</h1>
+                </div>
 
-            <div class="mini">
-            <button class="btn"> 
-                <img src="./img/cart.png"> 
-                <span>Add to Cart</span>
-            </button>
-            </div>
+                <div class="mini">
+                    <button class="btn">
+                        <img src="./img/cart.png">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
 
             </div>
         </div>
@@ -175,32 +200,33 @@
 
             <div class="mini-flex">
 
-            <div class="mini">
-            <h1>$249.99</h1>
-            </div>
+                <div class="mini">
+                    <h1>$249.99</h1>
+                </div>
 
-            <div class="mini">
-            <button class="btn"> 
-                <img src="./img/cart.png"> 
-                <span>Add to Cart</span>
-            </button>
-            </div>
+                <div class="mini">
+                    <button class="btn">
+                        <img src="./img/cart.png">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
 
             </div>
         </div>
 
     </section>
 
-<div class="footer">
-    <img src="./img/logo.png">
+    <div class="footer">
+        <img src="./img/logo.png">
 
-    <a href="">PRIVACY POLICY</a>
-    <a href="">TERMS OF SERVICE</a>
-    <a href="./contact.html">CONTACT US</a>
-    <a href="./sign-in.html">SIGN IN</a>
+        <a href="">PRIVACY POLICY</a>
+        <a href="">TERMS OF SERVICE</a>
+        <a href="./contact.html">CONTACT US</a>
+        <a href="./sign-in.html">SIGN IN</a>
 
-    <P>*2026 S&Y Sports. Editorial Excellence in Athletics.</P>
-</div>
+        <P>*2026 S&Y Sports. Editorial Excellence in Athletics.</P>
+    </div>
 
 </body>
+
 </html>

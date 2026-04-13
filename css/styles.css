@@ -70,6 +70,7 @@ body {
     color: rgb(100, 100, 150);
 }
 
+/* Search button*/
 .search button {
     border: none;
     background-color: transparent;
@@ -81,14 +82,68 @@ body {
     }
 }
 
-.header .cart {
+/* for making cart clickable used modal/pop window and javascript*/
+.cart-wrapper{
     margin-left: auto;
     border: none;
+    cursor: pointer;
 
-    img {
+    .cart{
         max-height: 25px;
     }
 }
+
+/* The Modal Background (Dimmer) */
+.cart-modal {
+    display: none; /* Hidden until clicked */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* The actual box in the middle */
+.cart-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.close-btn { 
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buy-btn {
+    width: 100%;
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: teal;
+}
+
 
 
 .header .logo {
