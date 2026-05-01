@@ -9,6 +9,7 @@ body {
     min-height: 100vh;
     background: url("../img/Copilot_20260402_110617.png") no-repeat center center;
     background-size: cover;
+  /*  -webkit-backdrop-filter: blur(2px); */
     backdrop-filter: blur(2px);
 }
 
