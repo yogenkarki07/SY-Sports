@@ -203,8 +203,9 @@ body {
     background-color: teal;
     border: 1px solid teal;
     border-radius: 5px;
+    text-decoration: none;
 
-    height: 30px;
+    height: 20px;
     width: auto;
 }
 
